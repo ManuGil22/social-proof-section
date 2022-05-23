@@ -87,8 +87,10 @@
 
 @media (max-width: 850px) {
   .App {
-    margin-top: 50px;
     height: auto;
+    background: url('./images/bg-pattern-top-mobile.svg'), url('./images/bg-pattern-bottom-mobile.svg');
+    background-position: left top, center bottom;
+    background-repeat: no-repeat;
   }
   .feedbacks-container {
     flex-direction: column;
