@@ -1,38 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: url('./images/bg-pattern-top-desktop.svg'), url('./images/bg-pattern-bottom-desktop.svg');
+  background-position: left top, center bottom;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'League Spartan', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+
+.stats-info {
+  max-width: 1130px;
+  color: hsl(300, 43%, 22%);
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 375px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.users-stats {
+  max-width: 530px;
+  padding: 0.8rem;
+}
+
+.users-rating {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.users-stats h1{
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.users-info {
+  color: hsl(303, 10%, 53%);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-right: 6rem;
+}
+
+.rating-container:first-child {
+  align-self: flex-start;
+}
+
+.rating-container:last-child {
+  align-self: flex-end;
+}
+
+.feedbacks-container {
+  max-width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 330px;
+}
+
+.feedback:first-child {
+  align-self: flex-start;
+}
+
+.feedback:last-child {
+  align-self: flex-end;
+}
+
+@media (max-width: 1000px) {
+  .users-stats h1 {
+    font-size: 36px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 850px) {
+  .App {
+    margin-top: 50px;
+    height: auto;
+  }
+  .feedbacks-container {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+  }
+  .stats-info {
+    flex-direction: column;
+    height: auto;
+  }
+  .rating-container {
+    width: auto;
+  }
+  .rating-container:first-child {
+    align-self: center;
+  }
+  .rating-container:last-child {
+    align-self: center;
+  }
+  .feedback:first-child {
+    align-self:center;
+  }
+  .feedback:last-child {
+    align-self: center;
+  }
+  .users-stats{
+    text-align: center;
+  }
+  .users-stats h1 {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .users-info {
+    margin-right: 0;
+  }
+  .users-rating {
+    width: auto;
+    margin-top: 40px;
   }
 }

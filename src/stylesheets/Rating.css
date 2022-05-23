@@ -1,0 +1,40 @@
+.rating-container {
+    display: flex;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    width: 475px;
+    height: 55px;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+.rating {
+    margin: 1.8rem;
+}
+
+.star {
+    margin: 0.3rem;
+}
+
+.rating-container p {
+    color: hsl(300, 43%, 22%);
+    font-size: 18px;
+}
+
+@media (max-width: 900px) {
+    .rating-container {
+        width: 370px;
+    }
+    .rating {
+        margin: 5px;
+    }
+    .star {
+        margin: 2px;
+    }
+}
+
+@media (max-width: 850px) {
+    .rating-container {
+        flex-direction: column;
+    }
+}
