@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/interactive-rating-component-responsive-ByjXcYTN9)
-- Live Site URL: [GitHub project page](https://manugil22.github.io/interactive-rating-component/)
+- Live Site URL: [GitHub project page](https://manugil22.github.io/social-proof-section/)
 
 ## My process
 
